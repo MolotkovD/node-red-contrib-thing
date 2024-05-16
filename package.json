@@ -1,0 +1,18 @@
+{
+  "name": "node-red-contrib-thing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "initer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "GPL-3.0-or-later",
+
+  "node-red" : {
+    "nodes": {
+        "monitoring": "monitor.js",
+        "command": "control.js"
+    }
+}
+}
