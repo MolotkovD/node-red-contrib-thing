@@ -1,0 +1,105 @@
+<script type="text/javascript">
+    RED.nodes.registerType('Builder',{
+        category: 'IoT',
+        color: '#D8A2C7',
+        defaults: {
+            name: {value:""},
+            N: {value:"0", required:true},
+            X: {value:"0", required:true},
+            Y: {value:"0", required:true},
+            T: {value:"0", required:true},
+            G: {value:"0", required:true},
+            V: {value:"0", required:true},
+            D0: {value:"0", required:true},
+            L1: {value:"0", required:true},
+            L2: {value:"0", required:true},
+            L3: {value:"0", required:true},
+            L4: {value:"0", required:true},
+            P: {value:"0", required:true},
+            TEXT: {value:""}
+        },
+        inputs:1,
+        outputs:1,  
+        icon: "function.svg",
+        label: function() {
+            return this.name || "Builder";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="Builder">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+
+    <div class="form-row">
+        <label for="node-output-N"><i class="fa fa-sliders"></i> N</label>
+        <input type="text" id="node-input-N" placeholder="0">
+    </div>
+
+    <div class="form-row">
+        <label for="node-output-X"><i class="fa fa-sliders"></i> X</label>
+        <input type="text" id="node-input-X" placeholder="0">
+    </div>
+
+    <div class="form-row">
+        <label for="node-output-Y"><i class="fa fa-sliders"></i> Y</label>
+        <input type="text" id="node-input-Y" placeholder="0">
+    </div>
+
+    <div class="form-row">
+        <label for="node-output-T"><i class="fa fa-sliders"></i> T</label>
+        <input type="text" id="node-input-T" placeholder="0">
+    </div>
+
+    <div class="form-row">
+        <label for="node-output-G"><i class="fa fa-sliders"></i> G</label>
+        <input type="text" id="node-input-G" placeholder="0">
+    </div>
+
+    <div class="form-row">
+        <label for="node-output-V"><i class="fa fa-sliders"></i> V</label>
+        <input type="text" id="node-input-V" placeholder="0">
+    </div>
+
+    <div class="form-row">
+        <label for="node-output-D0"><i class="fa fa-sliders"></i> D0</label>
+        <input type="text" id="node-input-D0" placeholder="0">
+    </div>
+
+    <div class="form-row">
+        <label for="node-output-L1"><i class="fa fa-sliders"></i> L1</label>
+        <input type="text" id="node-input-L1" placeholder="0">
+    </div>
+    
+    <div class="form-row">
+        <label for="node-output-L2"><i class="fa fa-sliders"></i> L2</label>
+        <input type="text" id="node-input-L2" placeholder="0">
+    </div>
+
+    <div class="form-row">
+        <label for="node-output-L3"><i class="fa fa-sliders"></i> L3</label>
+        <input type="text" id="node-input-L3" placeholder="0">
+    </div>
+
+    <div class="form-row">
+        <label for="node-output-L4"><i class="fa fa-sliders"></i> L4</label>
+        <input type="text" id="node-input-L4" placeholder="0">
+    </div>
+
+    <div class="form-row">
+        <label for="node-output-P"><i class="fa fa-sliders"></i> P</label>
+        <input type="text" id="node-input-P" placeholder="0">
+    </div>
+
+    <div class="form-row">
+        <label for="node-output-Text"><i class="fa fa-sliders"></i> Text</label>
+        <input type="text" id="node-input-TEXT" placeholder="">
+    </div>
+
+</script>
+
+<script type="text/html" data-help-name="Builder">
+    <p>Setting up parameters for a device with a robot name</p>
+</script>

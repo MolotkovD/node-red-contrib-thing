@@ -1,5 +1,5 @@
 <script type="text/javascript">
-    RED.nodes.registerType('monitoring',{
+    RED.nodes.registerType('monitoring', {
         category: 'IoT',
         color: '#D0A98F',
         defaults: {
@@ -8,7 +8,7 @@
         inputs: 0,
         outputs: 1,
         icon: "status.svg",
-        label: function() {  return "monitoring" }
+        label: function() {  return this.name || "monitoring" }
     });
 </script>
 

@@ -28,7 +28,9 @@ class ThingServer{
 
         this.app.post('/Things/:ThingName', (req, res) => {
             global.monitorNodes[req.params.ThingName]?.send({payload: req.body})
-            res.send(global.controlNodes[req.params.ThingName]?.controlData)
+            res_data = global.controlNodes[req.params.ThingName]?.controlData
+            if (res_data) res.send(res_data)
+            else res.send({})  
         })
 
         this.app.listen(29534, () => {

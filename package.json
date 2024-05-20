@@ -8,11 +8,14 @@
   },
   "author": "",
   "license": "GPL-3.0-or-later",
-
-  "node-red" : {
+  "node-red": {
     "nodes": {
-        "monitoring": "monitor.js",
-        "command": "control.js"
+      "monitoring": "monitor.js",
+      "command": "control.js",
+      "builder": "builder.js"
     }
-}
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
 }

@@ -1,7 +1,7 @@
 
 module.exports = function(RED) {
-    
     function MonitorNode(config) {
+        
         RED.nodes.createNode(this, config);
         global.controlNodes[config.name] = this
 
